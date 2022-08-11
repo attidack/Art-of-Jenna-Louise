@@ -395,7 +395,207 @@ db.once('open', async () => {
       image: '/Originals/TheLongStrangeTripJerryGarcia24x36Original.jpeg',
       price: 1512.00,
       quantity: 50
-    }, 
+    }, {
+      name: '"Long Strange Trip" 11x14 Luster Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/LongStrangeTrip11x14LusterPrint.jpg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"HAM" 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/HAM11x14Print.jpg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: "'Call Me When You're Sober' 11x14 Luster Print",
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/CallMeWhenYoureSober11x14LusterPrint.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Ocean Eyes" Billie Eilish Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/OceanEyesBillieEilishPrint.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Mercury Rising" 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/MercuryRising11x14Print.jpg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Blackstar" 12x12 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/Blackstar12x12Print.jpg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Camila" 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/Camila11x14Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Holocene Extinction" 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/HoloceneExtinction11x14Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: 'Mick Jagger 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/MickJagger11x14Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Hecate" 11x14 Luster Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/Hecate11x14LusterPrint.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: 'Figure From Last Night 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/FigureFromLastNight11x14Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: 'Figure From a Past Life 12x18 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/FigureFromAPastLife12x18Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: 'Tell Me What You See 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/TellMeWhatYouSee11x14Print.jpg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: "Charlotte's Web 11x14 Print",
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/CharlottesWeb11x14Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Leftover Makeup" 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/LeftoverMakeup11x14Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: 'Buried Alive 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/BuriedAlive11x14Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Yellow Submarine" 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/YellowSubmarine11x14Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Merica" 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/Merica11x14Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Kiss the Sky" 11x14 Jimi Hendrix Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/KissTheSky11x14JimiHendrix.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Almost Free" 12x12 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/AlmostFree12x12Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: 'Still Life 11x14 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/StillLife11x14Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Last Rites" 12x12 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/LastRites12x12Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: 'Untitled 12x12 Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/Untitled12x12Print.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"Bloom & Decay" Prints',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/BloomAndDecayPrint.jpeg',
+      price: 35.00,
+      quantity: 50
+    },{
+      name: '"The Lizard King" 12x12 Luster Paper Print',
+      category: categories[2]._id,
+      description:
+        'Authentic and Affordable Prints Made By Jenna Louise!',
+      image: '/Prints/TheLizardKing12x12LusterPaperPrint.jpeg',
+      price: 35.00,
+      quantity: 50
+    },
   ]);
 
   console.log('products seeded');
