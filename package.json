@@ -15,11 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
-<<<<<<< HEAD
-=======
   },
   "dependencies": {
     "@emotion/css": "^11.10.0"
->>>>>>> feature/emotion
   }
 }
