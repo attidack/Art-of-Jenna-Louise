@@ -603,15 +603,16 @@ db.once('open', async () => {
   await User.deleteMany();
 
   await User.create({
-    firstName: 'Pamela',
-    lastName: 'Washington',
-    email: 'pamela@testmail.com',
+    firstName: 'admin',
+    lastName: 'admin',
+    email: 'attidack@gmail.com',
     password: 'password12345',
     orders: [
       {
         products: [products[0]._id, products[0]._id, products[1]._id]
       }
-    ]
+    ],
+    admin: true
   });
 
   await User.create({
