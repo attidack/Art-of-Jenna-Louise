@@ -24,6 +24,14 @@ Installation is not required.
 
 The following will be a guide when using the application.
 
+- When the page loads, users will be on the Homepage. The Homepage contains several recent created art piece.
+- On the top of the homepage, there is a navigation bar. The navigation bar has an ART, APPAREL, HOME, shopping cart, and Log-in tab.
+- The ART tab allows users to see all the art pieces that are available.
+- The APPAREL tab allows users to see all the T-shirts and Hoodies that are available.
+- The HOME tab bring users back to the homepage.
+- Log-in tab allows users to sign up an account or log in to their account.
+- The shopping cart icon allows users to see their items in their cart.
+
 
 ## Demo
 
@@ -77,7 +85,7 @@ Example of the (client side)
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2022 Andrea Rowland, Shek Chun Lee, Bryson Vatuvel, Kaeleb Sosa
+Copyright (c) 2022 Andrea Rowland, Shek Chun Lee, Bryson Vatuvel, Kaeleb Sosa, Jon Bird
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
