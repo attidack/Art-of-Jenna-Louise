@@ -19,7 +19,7 @@ db.once('open', async () => {
       name: '‘The Fire Within’ Giclee Canvas Print',
       description:
         'All Giclee canvas prints are wrapped on 1.5” bars, gloss varnished, signed, and ready to hang!',
-      image: './images/GicleeCanvasPrints/TheFireWithinGicleeCanvasPrint.jpg',
+      image: '/GicleeCanvasPrints/TheFireWithinGicleeCanvasPrint.jpg',
       category: categories[0]._id,
       price: 450.00,
       quantity: 500
@@ -28,7 +28,7 @@ db.once('open', async () => {
       name: '“The Long Strange Trip” Jerry Garcia',
       description:
         'giclee canvas print. Hand signed, varnished, and ready to hang.',
-      image: './images/GicleeCanvasPrints/TheLongStrangeTripJerryGarciaCanvasPrint',
+      image: '/GicleeCanvasPrints/TheLongStrangeTripJerryGarciaCanvasPrint.jpeg',
       category: categories[0]._id,
       price: 350.00,
       quantity: 500
@@ -38,7 +38,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'giclee canvas print. Hand signed, varnished, and ready to hang.',
-      image: './images/GicleeCanvasPrints/NeedABuzzGicleeCanvas1-10Print.jpeg',
+      image: '/GicleeCanvasPrints/NeedABuzzGicleeCanvas1-10Print.jpg',
       price: 250.00,
       quantity: 20
     },
@@ -47,7 +47,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
-      image: './images/GicleeCanvasPrints/HAMGicleeCanvasPrint.jpg',
+      image: '/GicleeCanvasPrints/HAM-GicleeCanvasPrint.jpg',
       price: 200.00,
       quantity: 50
     },
