@@ -137,13 +137,29 @@ const resolvers = {
 
       return { token, user };
     },
-    adminAddProduct: async (parent, args) => {
-      const newProduct = await Product.create(args);
+    adminAddProduct: async (parent, args, context) => {
+      console.log(context);
 
-      return { newProduct }
+      if (context.admin) {
+        const newProduct = await Product.create(args);
+        return newProduct 
+      }
+      throw new AuthenticationError('You do not have access');
     },
-    adminUpdateProduct: async (parent, args, context) => {},
-    adminDeleteProduct: async (parent, {}) => {}
+    adminUpdateProduct: async (parent, args, context) => {
+      
+      if (context.admin) {
+        return await Product.findByIdAndUpdate(context.admin_id, args, { new: true });
+      }
+      throw new AuthenticationError('You do not have access');
+    },
+    adminDeleteProduct: async (parent, args, context) => {
+      if (context.admin) {
+        await Product.findByIdAndDelete()
+        return 
+      }
+      throw new AuthenticationError('You do not have access');
+    }
   }
 };
 
