@@ -80,11 +80,22 @@ a:hover {
 }
 
 header {
-  background: var(--primary);
+  background: #212121;
+  height: 79px;
+  justify-content: space-between;
 }
 
 header a {
   color: var(--light);
+}
+
+nav {
+  position: relative;
+  margin-right: 10%;
+}
+
+.namesize {
+  font-size: 1.25rem;
 }
 
 button {
