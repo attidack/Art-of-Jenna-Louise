@@ -136,7 +136,14 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
-    }
+    },
+    adminAddProduct: async (parent, args) => {
+      const newProduct = await Product.create(args);
+
+      return { newProduct }
+    },
+    adminUpdateProduct: async (parent, args, context) => {},
+    adminDeleteProduct: async (parent, {}) => {}
   }
 };
 
