@@ -1,6 +1,14 @@
-import auth from "../utils/auth"
-if (token){
+import React from "react";
+import ProductList from "../componenets/ProductList";
+import CategoryMenu from "../componenets/CategoryMenu";
 
-}else {
-    return home
+const Admin = () => {
+    return (
+        <div className="container">
+            <CategoryMenu />
+            <ProductList />
+        </div>
+    );
 }
+
+export default Admin;

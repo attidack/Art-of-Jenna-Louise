@@ -39,6 +39,7 @@ function Nav() {
     }
   }
 
+ 
   return (
     <header className="flex-row px-1">
       <h1 className="namesize">
@@ -49,6 +50,7 @@ function Nav() {
 
       <nav>
         {showNavigation()}
+        {/* {showAdminNavigation()} */}
       </nav>
     </header>
   );
