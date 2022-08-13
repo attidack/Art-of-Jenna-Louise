@@ -27,6 +27,7 @@ class AuthService {
     }
   }
 
+
   getToken() {
     // Retrieves the user token from localStorage
     return localStorage.getItem('id_token');
@@ -45,6 +46,15 @@ class AuthService {
     // this will reload the page and reset the state of the application
     window.location.assign('/');
   }
+
+  isAdmin() {
+    const profile = this.getProfile()
+    if (profile.admin === true) {
+      return true
+    }
+  }
 }
+
+
 
 export default new AuthService();

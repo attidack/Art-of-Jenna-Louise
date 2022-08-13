@@ -17,6 +17,7 @@ import Nav from './components/Nav';
 import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
+// import Admin from './pages/admin';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
