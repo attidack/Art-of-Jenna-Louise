@@ -65,8 +65,8 @@ const typeDefs = gql`
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth
-    adminAddProduct()
-    adminUpdateProduct()
+    adminAddProduct(name: String, description: String, image: String, price: Number, quantity: Number, category: Schema.Types.ObjectId): Product
+    adminUpdateProduct(name: String, description: String, image: String, price: Number, quantity: Number, category: Schema.Types.ObjectId): Product
     adminDeleteProduct()
   }
 `;
