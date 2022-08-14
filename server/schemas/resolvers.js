@@ -149,13 +149,13 @@ const resolvers = {
     adminUpdateProduct: async (parent, args, context) => {
       
       if (context.admin) {
-        return await Product.findByIdAndUpdate(context.admin_id, args, { new: true });
+        return await Product.findByIdAndUpdate(_id, args, { new: true });
       }
       throw new AuthenticationError('You do not have access');
     },
-    adminDeleteProduct: async (parent, args, context) => {
+    adminDeleteProduct: async (parent, { _id }, context) => {
       if (context.admin) {
-        await Product.findByIdAndDelete()
+        await Product.findByIdAndDelete(_id, args)
         return 
       }
       throw new AuthenticationError('You do not have access');
