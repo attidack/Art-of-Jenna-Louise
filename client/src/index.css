@@ -101,9 +101,13 @@ header a {
 
 nav {
   position: relative;
-  margin-right: 10%;
+  margin-right: 2%;
   margin-top: auto;
   margin-bottom: auto;
+  font-family:'PT Sans', Helvetica, Arial, sans-serif;
+  justify-content: space-around;
+  font-size: medium;
+  padding: 0 5px;
 }
 
 .namesize {

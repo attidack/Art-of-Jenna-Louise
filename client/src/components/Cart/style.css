@@ -32,7 +32,9 @@
 }
 
 .cart-closed {
+  /* OFF FOR NOW 
   position: fixed;
+  */
   top: 2%;
   right: 1%;
   font-size: 2rem;
