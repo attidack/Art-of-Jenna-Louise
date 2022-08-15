@@ -1,6 +1,12 @@
-import auth from "../utils/auth"
-if (token){
+import React from "react";
 
-}else {
-    return home
-}
+const Admin = () => {
+    return (
+      <div className="container">
+        admin page
+      </div>
+    );
+  };
+  
+  export default Admin;
+  

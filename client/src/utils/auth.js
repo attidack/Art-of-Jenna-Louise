@@ -16,6 +16,18 @@ class AuthService {
     
   }
 
+  ifAdmin() {
+    const token = this.getToken();
+    if (token) {
+      console.log(token)
+      let adminStatus = this.getProfile(token)
+       console.log(adminStatus.data.admin)
+      return adminStatus.data.admin;
+  }else{
+    return false
+  }
+}
+
   isTokenExpired(token) {
     try {
       const decoded = decode(token);
