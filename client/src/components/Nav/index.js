@@ -32,13 +32,23 @@ function showNavigation() {
     return (
       <ul className="flex-row">
         <li className="mx-1">
+          <Link to="/">
+            ART
+          </Link>
+        </li>
+        <li className="mx-1">
           <Link to="/signup">
-            Signup
+            APPAREL
           </Link>
         </li>
         <li className="mx-1">
           <Link to="/login">
-            Login
+            CUSTOM SKATE DECKS
+          </Link>
+        </li>
+        <li className="mx-1">
+          <Link to="/">
+            HOME
           </Link>
         </li>
       </ul>

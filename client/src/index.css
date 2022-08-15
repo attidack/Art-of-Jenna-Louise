@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Condensed&display=swap');
+
 :root {
   --primary: #232F3E;
   --secondary: #F3A847;
@@ -85,13 +87,23 @@ header {
   justify-content: space-between;
 }
 
+header h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0.75rem;
+  font-family:'PT Sans', Helvetica, Arial, sans-serif;
+  letter-spacing: .2rem;
+}
+
 header a {
-  color: var(--light);
+  color: #fff;
 }
 
 nav {
   position: relative;
   margin-right: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .namesize {
