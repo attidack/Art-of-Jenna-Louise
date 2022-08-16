@@ -38,12 +38,12 @@ function showNavigation() {
         </li>
         <li className="mx-1">
           <Link to="/signup">
-            APPAREL
+            SIGNUP
           </Link>
         </li>
         <li className="mx-1">
           <Link to="/login">
-            CUSTOM SKATE DECKS
+            LOGIN
           </Link>
         </li>
         <li className="mx-1">
