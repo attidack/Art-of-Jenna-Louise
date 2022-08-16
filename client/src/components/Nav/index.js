@@ -7,13 +7,13 @@ function showNavigation() {
   if (Auth.loggedIn()) {
     return (
       <ul className="flex-row">
-      {Auth.ifAdmin() ? 
-      <li className="mx-1">
-      <Link to="/admin">
-        Admin
-      </Link>
-    </li>: ''
-      }
+        {Auth.ifAdmin() ?
+          <li className="mx-1">
+            <Link to="/admin">
+              Admin
+            </Link>
+          </li> : ''
+        }
         <li className="mx-1">
           <Link to="/orderHistory">
             Order History
@@ -33,7 +33,28 @@ function showNavigation() {
       <ul className="flex-row">
         <li className="mx-1">
           <Link to="/">
-            ART
+            <div className="dropdown">
+              <span>ART</span>
+              <div className="dropdown-content">
+                <ul className="ulmove">
+                <li className="linone">
+                <Link to="/">
+                  Originals
+                </Link>
+                </li>
+                <li className="linone">
+                <Link to="/">
+                  Giclee Canvases
+                </Link>
+                </li>
+                <li className="linone">
+                <Link to="/">
+                  Prints
+                </Link>
+                </li>
+                </ul>
+              </div>
+            </div>
           </Link>
         </li>
         <li className="mx-1">
@@ -59,7 +80,7 @@ function showNavigation() {
 
 function Nav() {
 
-  
+
 
   return (
     <header className="flex-row px-1">

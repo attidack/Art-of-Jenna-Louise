@@ -5,8 +5,8 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Giclee Canvas Prints' },
     { name: 'Originals' },
+    { name: 'Giclee Canvas Prints' },
     { name: 'Prints' },
   ]);
 
@@ -20,7 +20,7 @@ db.once('open', async () => {
       description:
         'All Giclee canvas prints are wrapped on 1.5” bars, gloss varnished, signed, and ready to hang!',
       image: '/GicleeCanvasPrints/TheFireWithinGicleeCanvasPrint.jpg',
-      category: categories[0]._id,
+      category: categories[1]._id,
       price: 450.00,
       quantity: 500
     },
@@ -29,13 +29,13 @@ db.once('open', async () => {
       description:
         'giclee canvas print. Hand signed, varnished, and ready to hang.',
       image: '/GicleeCanvasPrints/TheLongStrangeTripJerryGarciaCanvasPrint.jpeg',
-      category: categories[0]._id,
+      category: categories[1]._id,
       price: 350.00,
       quantity: 500
     },
     {
       name: '"Need a Buzz" Giclee Canvas 1/10 Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'giclee canvas print. Hand signed, varnished, and ready to hang.',
       image: '/GicleeCanvasPrints/NeedABuzzGicleeCanvas1-10Print.jpg',
@@ -44,7 +44,7 @@ db.once('open', async () => {
     },
     {
       name: '"HAM" Giclee Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/HAM-GicleeCanvasPrint.jpg',
@@ -53,7 +53,7 @@ db.once('open', async () => {
     },   
      {
       name: "'Call Me When You're Sober' Giclee Canvas Print",
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: "/GicleeCanvasPrints/CallMeWhenYou'reSober.jpeg",
@@ -61,7 +61,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Into the Void" Giclee Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/IntoTheVoid.jpg',
@@ -69,7 +69,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Ocean Eyes" Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/OceanEyesCanvasPrint.jpeg',
@@ -77,7 +77,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Mercury Rising" Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/MercuryRisingCanvasPrint.jpg',
@@ -85,7 +85,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Blackstar" Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/BlackstarCanvasPrint.jpg',
@@ -93,7 +93,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"The Lizard King" Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/TheLizardKingCanvasPrint.jpg',
@@ -101,7 +101,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Freedom" Jimi Hendrix Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/FreedomJimiHendrixCanvasPrint.jpeg',
@@ -109,7 +109,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: 'Amy Winehouse Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/AmyWinehouseCanvasPrint.jpeg',
@@ -117,7 +117,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: 'Mick Jagger Giclee Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/MickJaggerGiclessCanvasPrint.jpeg',
@@ -125,7 +125,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: 'Camila Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/CamilaCanvasPrint.jpeg',
@@ -133,7 +133,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Hecate" Giclee Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/HecateGicleeCanvasPrint.jpeg',
@@ -141,7 +141,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Holocene Extinction" 24x30 Giclee Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/HoloceneExtinction24x30GicleeCanvasPrint.jpeg',
@@ -149,7 +149,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Figure from Last Night" Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/FigureFromLastNightCanvasPrint.jpeg',
@@ -157,7 +157,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: "Charlotte's Web Canvas Print",
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/CharlottesWebCanvasPrint.jpeg',
@@ -165,7 +165,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Figure from a Past Life" Giclee Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/FigureFromAPastLifeGicleeCanvasPrint.jpeg',
@@ -173,7 +173,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Buried Alive" Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/BuriedAliveCanvasPrint.jpeg',
@@ -181,7 +181,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Surrender" Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/SurrenderCanvasPrint.jpeg',
@@ -189,7 +189,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: "'Merica Canvas Print",
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/MericaCanvasPrint.jpeg',
@@ -197,7 +197,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: 'Leftover Makeup Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/LeftoverMakeupCanvasPrint.jpeg',
@@ -205,7 +205,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Last Rites" Giclee Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/LastRitesGicleeCanvasPrint.jpeg',
@@ -213,7 +213,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Yellow Submarine" Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/YellowSubmarineCanvasPrint.jpeg',
@@ -221,7 +221,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: 'Untitled Giclee Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/UntitledGicleeCanvasPrint.jpeg',
@@ -229,7 +229,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: 'Still Life 24x36 Giclee Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/StillLife24x36GicleeCanvasPrint.jpeg',
@@ -237,7 +237,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Bloom and Decay" Giclee Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/BloomAndDecayGicleeCanvasPrint.jpeg',
@@ -245,7 +245,7 @@ db.once('open', async () => {
       quantity: 50
     },     {
       name: '"Redemption" Giclee Canvas Print',
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
         'All Giclee canvas prints are varnished, signed, and ready to hang. The canvas pictured is a 30x40 for size reference. ',
       image: '/GicleeCanvasPrints/RedemptionGicleeCanvasPrint.jpeg',
@@ -253,7 +253,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"Into the Void" Original Acrylic 30x40',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/IntoTheVoidOriginalAcrylic.jpg',
@@ -261,7 +261,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"HAM" 30x40 Original Painting',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/HAM30x40OriginalPainting.jpg',
@@ -269,7 +269,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: "'Call Me When You're Sober' 30x40 Original",
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: "/Originals/CallMeWhenYou'reSober30x40Original.jpeg",
@@ -277,7 +277,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"Holocene Extinction" 36x48 Original',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/HoloceneExtinction36X48Original.jpeg',
@@ -285,7 +285,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"Mick Jagger" 40x30 Original Acrylic on Gallery Wrapped Canvas',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/MickJagger40x30OriginalAcryliconGalleryWrappedCanvas.jpeg',
@@ -293,7 +293,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"Into the Void"',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/IntoTheVoid.jpeg',
@@ -301,7 +301,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: 'Figure From a Past Life 30x48 Original',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/FigureFromAPastLife30x48Original.jpeg',
@@ -309,7 +309,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: 'Figure From Last Night 30x40 Original',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/FigureFromLastNight30x40Original.jpeg',
@@ -317,7 +317,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"Tell Me What You See" 30x40 Original',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/TellMeWhatYouSee30x40Original.jpg',
@@ -325,7 +325,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"Buried Alive" Original 36x48',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/BuriedAliveOriginal36x48.jpeg',
@@ -333,7 +333,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"Merica" Original 36x48 Oil and Acrylic',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/MericaOriginal36x48OilandAcrylic.jpeg',
@@ -341,7 +341,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: "'Charlotte's Web' 30x40",
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/CharlottesWeb30x40.jpeg',
@@ -349,7 +349,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"Surrender" Original 30x48',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/SurrenderOriginal30x48.jpeg',
@@ -357,7 +357,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"Leftover Makeup" 30x40',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/LeftoverMakeup30x40.jpeg',
@@ -365,7 +365,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"Yellow Submarine" 18x24 Original',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/YellowSubmarine18x24Original.jpeg',
@@ -373,7 +373,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: 'Still Life Original 24x30',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/StillLifeOriginal24x30.jpeg',
@@ -381,7 +381,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: 'Untitled 24x24 Original',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/Untitled24x24Original.jpeg',
@@ -389,7 +389,7 @@ db.once('open', async () => {
       quantity: 50
     }, {
       name: '"The Long Strange Trip" Jerry Garcia 24x36 Original',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Original One of A Kind Art Made By Jenna Louise!',
       image: '/Originals/TheLongStrangeTripJerryGarcia24x36Original.jpeg',
