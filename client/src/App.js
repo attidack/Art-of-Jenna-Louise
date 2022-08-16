@@ -18,6 +18,8 @@ import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 
+import Admin from './pages/admin';
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -50,6 +52,10 @@ function App() {
               <Route 
                 path="/" 
                 element={<Home />} 
+              />
+              <Route 
+                path="/admin" 
+                element={<Admin />} 
               />
               <Route 
                 path="/login" 
