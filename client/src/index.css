@@ -72,13 +72,17 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: #212121;
   text-decoration: none;
   font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
+.centering {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* NAVIGATION */
@@ -152,7 +156,13 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: rgb(0 0 0 / 29%);
+}
+
+.buttonsizing {
+  width: 8rem;
+  height: 5rem;
+  border: #212121 solid 1px;
 }
 
 button:hover {
@@ -164,8 +174,13 @@ button[disabled] {
   opacity: .8;
 }
 
+/* PRODUCTS LIST */
 img {
   max-width: 100%;
+  max-height: 100%;
+  width: 393px;
+  height: 300px;
+  object-fit: cover;
 }
 
 span[role="img"] {
@@ -251,8 +266,10 @@ input:focus {
 }
 
 .card {
-  width: 25%;
+  width: 26%;
   text-align: center;
+  margin-left: auto;
+  margin-bottom: 2rem;
 }
 
 .error-text {
