@@ -29,6 +29,7 @@ This is an ecommernce website for the artist Jenna Louise. Users are able to vie
 ## Web Link
 
 ## PowerPoint Presentation describing functionality
+https://docs.google.com/presentation/d/1f6BqmsObDblFbqtCbK2M-8n69zUbXed7X_WdRAVitLo/edit#slide=id.p
 
 ## Contributing
 https://github.com/attidack Jon Bird</br>
@@ -39,9 +40,11 @@ https://github.com/Andrea-Rowland Andrea Haag</br>
 
 ## Questions
 Questions about this project? Reach out to one of us:
-gerushays@gmail.com</br>
+
 kaelebdreams@hotmail.com</br>
-luicks212@gmail.com</br>
+leeshekchun@gmail.com </br>
 andreadhaag@gmail.com</br>
+attidack@gmail.com </br>
+vatuvei.bryson@gmail.com
 
 
