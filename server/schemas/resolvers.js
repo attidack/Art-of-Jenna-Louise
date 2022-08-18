@@ -90,6 +90,19 @@ const resolvers = {
     }
   },
   Mutation: {
+    deleteProduct: async (parent, args, context) => {
+      const deletedProduct = await Product.findOneAndDelete({
+        _id: args.productId
+      })
+      return deletedProduct
+    },
+    editProduct: async  (parent, {_id , productInfo }) => {
+      const editProductInfo = await Product.findByIdAndUpdate(
+        _id, productInfo, {new:true}
+      )
+      return editProductInfo
+      
+    },
     addUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user);

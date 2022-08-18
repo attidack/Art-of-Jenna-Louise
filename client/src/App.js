@@ -7,7 +7,7 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-
+import Auth from "./utils/auth";
 import Home from './pages/Home';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
@@ -17,6 +17,8 @@ import Nav from './components/Nav';
 import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
+
+import Admin from './pages/admin';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -38,6 +40,8 @@ const client = new ApolloClient({
 });
 
 function App() {
+  const token = Auth.loggedIn() ? Auth.getProfile() : null
+  console.log(token)
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -48,6 +52,10 @@ function App() {
               <Route 
                 path="/" 
                 element={<Home />} 
+              />
+              <Route 
+                path="/admin" 
+                element={<Admin />} 
               />
               <Route 
                 path="/login" 

@@ -44,8 +44,16 @@ const typeDefs = gql`
     products(category: ID, name: String): [Product]
     product(_id: ID!): Product
     user: User
+    users : [User]
     order(_id: ID!): Order
     checkout(products: [ID]!): Checkout
+  }
+
+  input newInfo {
+    name: String
+    description: String
+    quantity: Int
+    price: Float
   }
 
   type Mutation {
@@ -54,6 +62,8 @@ const typeDefs = gql`
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth
+    deleteProduct(_id: String!): Product
+    editProduct(_id: String!, productInfo: newInfo!):Product
   }
 `;
 

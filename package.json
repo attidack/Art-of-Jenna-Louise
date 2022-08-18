@@ -14,7 +14,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+<<<<<<< HEAD
     "concurrently": "^5.1.0",
+=======
+    "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+>>>>>>> develop
     "@emotion/css": "^11.10.0"
   }
 }

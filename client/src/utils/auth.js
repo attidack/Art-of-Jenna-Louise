@@ -8,8 +8,25 @@ class AuthService {
   loggedIn() {
     // Checks if there is a saved token and it's still valid
     const token = this.getToken();
-    return !!token && !this.isTokenExpired(token);
+    if (token) {
+      return !!token && !this.isTokenExpired(token);
+    }else{
+      return false
+    }
+    
   }
+
+  ifAdmin() {
+    const token = this.getToken();
+    if (token) {
+      console.log(token)
+      let adminStatus = this.getProfile(token)
+       console.log(adminStatus.data.admin)
+      return adminStatus.data.admin;
+  }else{
+    return false
+  }
+}
 
   isTokenExpired(token) {
     try {

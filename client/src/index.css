@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Condensed&display=swap');
+
 :root {
   --primary: #232F3E;
   --secondary: #F3A847;
@@ -70,21 +72,79 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: #212121;
   text-decoration: none;
   font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
+.centering {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
+/* NAVIGATION */
 header {
-  background: var(--primary);
+  background: #212121;
+  height: 79px;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0.75rem;
+  font-family:'PT Sans', Helvetica, Arial, sans-serif;
+  letter-spacing: .2rem;
 }
 
 header a {
-  color: var(--light);
+  color: #fff;
+}
+
+nav {
+  position: relative;
+  margin-right: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family:'PT Sans', Helvetica, Arial, sans-serif;
+  justify-content: space-around;
+  font-size: medium;
+  padding: 0 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #212121;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.ulmove {
+  padding-left: 0;
+}
+
+.linone {
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+.namesize {
+  font-size: 1.25rem;
 }
 
 button {
@@ -96,7 +156,13 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: rgb(0 0 0 / 29%);
+}
+
+.buttonsizing {
+  width: 8rem;
+  height: 5rem;
+  border: #212121 solid 1px;
 }
 
 button:hover {
@@ -108,8 +174,13 @@ button[disabled] {
   opacity: .8;
 }
 
+/* PRODUCTS LIST */
 img {
   max-width: 100%;
+  max-height: 100%;
+  width: 393px;
+  height: 300px;
+  object-fit: cover;
 }
 
 span[role="img"] {
@@ -195,8 +266,10 @@ input:focus {
 }
 
 .card {
-  width: 25%;
+  width: 26%;
   text-align: center;
+  margin-left: auto;
+  margin-bottom: 2rem;
 }
 
 .error-text {
